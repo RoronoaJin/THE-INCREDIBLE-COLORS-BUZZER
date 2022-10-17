@@ -24,7 +24,7 @@ Ti suggerisco ben ***3*** differenti modi per farlo!
 
 > ### Accedi al link GitHub Page
 
-Clicca semplicemente su questo [bottone]() e sarai reindirizzato alla pagina contente il gioco
+Clicca semplicemente su questo [bottone](https://roronoajin.github.io/THE-INCREDIBLE-COLORS-BUZZER/) e sarai reindirizzato alla pagina contente il gioco
 
 > ### Scarica la repository in locale
 
