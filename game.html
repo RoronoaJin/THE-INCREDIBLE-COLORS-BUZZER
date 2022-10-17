@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE INCREDIBLE COLORS BUZZER</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <audio id="gameMainAudio" loop>
+        <source src="./assets/audio/gameMainTheme.mp3" type="audio/mp3">
+    </audio>
+    <audio id="wrongAnswerAudio">
+        <source src="./assets/audio/wrongAnswerSound.mp3" type="audio/mp3">
+    </audio>
+    <audio id="zeroPointsAudio">
+        <source src="./assets/audio/zeroPointsSound.mp3" type="audio/mp3">
+    </audio>
+    <audio id="winAudio">
+        <source src="./assets/audio/winSound.mp3" type="audio/mp3">
+    </audio>
+    <audio id="recordAudio">
+        <source src="./assets/audio/recordSound.mp3" type="audio/mp3">
+    </audio>
+    <section id="game-container" class="flex-column-nowrap align-center unselectable margin-auto">
+        <div id="game-content" class="flex-column-nowrap align-center justify-between centered-text">
+            <div id="hud-container" class="flex-row-nowrap align-center justify-between">
+                <div id="exit-mute-container" class="flex-row-nowrap align-center justify-around">
+                    <button id="exit-btn" class="btn" onClick="location.assign('./index.html')">EXIT</button>
+                    <button id="mute-volume" class="btn"><box-icon name='volume-mute' type='solid' color='#ffffff' ></box-icon></button>
+                </div>
+                <div id="lifepPoints-container" class="flex-row-nowrap align-center justify-center">
+                    <img src="./assets/imgs/lifePointsIcon.png" id="life-one" class="lifePointsIcon">
+                    <img src="./assets/imgs/lifePointsIcon.png" id="life-two" class="lifePointsIcon">
+                    <img src="./assets/imgs/lifePointsIcon.png" id="life-three" class="lifePointsIcon">
+                </div>
+                <p id="score">0</p>
+            </div>
+            <p id="timer" class="margin-auto"></p>
+            <div id="light" class="circle margin-auto"></div>
+            <div id="buzzers-container" class="flex-row-wrap align-center justify-evenly">
+                <button id="buzzer" class="circle margin-two"></button>
+                <button id="buzzer" class="circle margin-two second-buzzer"></button>
+                <button id="buzzer" class="circle margin-two"></button>
+                <button id="buzzer" class="circle margin-two"></button>
+            </div>
+        </div>
+    </section>
+    <section id="modal-container" class="flex-column-nowrap align-center justify-center unselectable">
+        <div id="modal-content" class="flex-column-nowrap align-center justify-evenly centered-text">
+            <p id="record-alert">NEW RECORD!</p>
+            <p id="modal-header">GAME OVER</p>
+            <p id="finalScore"></p>
+            <form id="insert-username-container" class="flex-row-wrap align-center justify-evenly">
+                <input type="text" name="name" id="username" placeholder="Enter Username" maxlength="3">
+                <button id="saveScoreBtn" type="submit" class="btn" onClick="saveHighScore(event)" disabled>SAVE</button>
+            </form>
+            <div id="btns-container" class="flex-row-nowrap align-center justify-between">
+                <button id="retry-btn" class="btn" onClick="location.assign('./game.html')">RETRY</button>
+                <button id="home-btn" class="btn" onClick="location.assign('./index.html')">HOME</button>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

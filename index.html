@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE INCREDIBLE COLORS BUZZER</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <audio id="homeAudio" autoplay>
+        <source src="./assets/audio/homeTheme.mp3" type="audio/mp3">
+    </audio>
+    <section id="home-container" class="container-type flex-column-nowrap justify-evenly align-center margin-auto centered-text unselectable">
+        <h3 id="header">THE INCREDIBLE COLORS BUZZER</h3>
+        <div id="btns-container" class="flex-column-nowrap align-center">
+            <button id="start-btn" class="btn" onClick="location.assign('./game.html')">START</button>
+            <button id="leaderboard-btn" class="btn" onClick="location.assign('./leaderboard.html')">LEADERBOARD</button>
+        </div>
+    </section>
+</body>
+</html>

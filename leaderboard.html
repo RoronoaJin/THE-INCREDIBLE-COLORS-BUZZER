@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE INCREDIBLE COLORS BUZZER</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <audio id="leaderboardAudio" autoplay loop>
+        <source src="./assets/audio/leaderboardTheme.mp3" type="audio/mp3">
+    </audio>
+    <section id="leadeboard-container" class="container-type flex-column-nowrap justify-around align-center margin-auto centered-text unselectable">
+        <p id="leaderboard-header">Leaderboard</p>
+        <div id="highScores-container" class="flex-column-nowrap align-center justify-evenly margin-auto">
+            <ul id="highScoresList" class="margin-auto"></ul>
+        </div>
+        <button id="home-btn" class="btn size-one" onClick="location.assign('./index.html')">HOME</button>
+    </section>
+    <script src="./assets/js/scores.js"></script>
+</body>
+</html>
