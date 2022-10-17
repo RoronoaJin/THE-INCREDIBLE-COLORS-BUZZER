@@ -3,13 +3,9 @@
 
 ## Cos'è
 
-***
-
 Si tratta di un gioco basato su riflessi, colori e tempo. Vi sono 4 buzzer e una luce centrale che si accende in maniera casuale. Ogni qualvolta che accade, hai a disposizione pochi secondi per cliccare il buzzer con il colore corrispondente a quello della luce. Mettiti alla prova e cerca di fare il record più alto!
 
 ## Regole
-
-***
 
 + Hai a disposizione **3** vite 💗
 + Parti con un timer ⏱️ di **20** secondi
@@ -22,9 +18,9 @@ Si tratta di un gioco basato su riflessi, colori e tempo. Vi sono 4 buzzer e una
 
 ## Come avviare il gioco
 
-***
-
 Ti suggerisco ben ***3*** differenti modi per farlo!
+
+***
 
 > ### Accedi al link GitHub Page
 
